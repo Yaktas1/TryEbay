@@ -1,0 +1,130 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is on the Ebay home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3466545000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Ebay home page",
+            "match": {
+              "location": "com.Ebay.step_definitions.EbaySearchStepDefination.user_is_on_the_Ebay_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-31T13:01:26.024Z",
+        "line": 8,
+        "name": "Search functionality title verification",
+        "description": "",
+        "id": "wiki-title-and-search-verifications;search-functionality-title-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 244246000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Ebay.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13997959000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User searches \"car\" in the ebay search page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"car\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.Ebay.step_definitions.EbaySearchStepDefination.user_searches_in_the_ebay_search_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4926000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should see \"car | eBay\" in the ebay title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"car | eBay\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.Ebay.step_definitions.EbaySearchStepDefination.user_should_see_in_the_ebay_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14558000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to see the last item",
+            "match": {
+              "location": "com.Ebay.step_definitions.EbaySearchStepDefination.userShouldBeAbleToSeeTheLastItem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1163855000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to save data",
+            "match": {
+              "location": "com.Ebay.step_definitions.EbaySearchStepDefination.userShouldBeAbleToSaveData()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ebay"
+          }
+        ]
+      }
+    ],
+    "name": "Wiki title and search verifications",
+    "description": "",
+    "id": "wiki-title-and-search-verifications",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EbaySearch.feature",
+    "tags": [
+      {
+        "name": "@Ebay",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
